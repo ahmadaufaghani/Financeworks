@@ -5,4 +5,7 @@
     <string name="desc2">Now you can be more effective in managing your finances</string>
     <string name="desc3">Now you can be more easily in managing your finances</string>
     <string name="desc4">Our app will lead you achieve a better future in finance with efficient, effective and easy way.</string>
+    <string name="profile">Profile</string>
+    <string name="add_image">Add Image</string>
+    <string name="enter_your_item_name">Enter your item name</string>
 </resources>
