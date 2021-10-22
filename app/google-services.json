@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "414880828887",
+    "project_id": "financeworks-6195e",
+    "storage_bucket": "financeworks-6195e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414880828887:android:d23e5b0b7235bc8ab10f92",
+        "android_client_info": {
+          "package_name": "com.example.financeworks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414880828887-ffo1da12ctmutak2mkf1519er212t052.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.financeworks",
+            "certificate_hash": "7806b6f25b08fae47edd5f249dc13731d4a73282"
+          }
+        },
+        {
+          "client_id": "414880828887-agknuc3laol10baihigjrctv9fdfkc3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK3LAfeQRvhehbyPjVBoZQg9OhWSYR-24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414880828887-agknuc3laol10baihigjrctv9fdfkc3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
