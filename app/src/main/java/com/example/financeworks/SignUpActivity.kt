@@ -1,5 +1,6 @@
 package com.example.financeworks
 
+import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,7 +17,7 @@ class SignUpActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.signup_main)
+        setContentView(R.layout.activity_signup)
 
         auth = FirebaseAuth.getInstance()
 
@@ -54,11 +55,16 @@ class SignUpActivity : AppCompatActivity() {
             }
             registerUser(email, password, password2)
 
-        val signupClick: TextView = findViewById(R.id.signin_click)
-        signupClick.setOnClickListener{
+            val progressDialog = ProgressDialog(this)
+            progressDialog.setMessage("Signing Up In...")
+            progressDialog.setCancelable(false)
+            progressDialog.show()
+        }
+
+        val signinClick: TextView = findViewById(R.id.signin_click)
+        signinClick.setOnClickListener{
             val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
-        }
     }
 }
 

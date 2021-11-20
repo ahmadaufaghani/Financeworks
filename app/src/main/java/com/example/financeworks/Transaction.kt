@@ -1,7 +1,5 @@
 package com.example.financeworks
 
-data class Transaction(
-    val namaItem: String,
-    val descItem: String,
-    val priceItem: String
-)
+class Transaction(val nameItem: String? = null, val descItem: String? = null, val priceItem:String? = null) {
+
+}

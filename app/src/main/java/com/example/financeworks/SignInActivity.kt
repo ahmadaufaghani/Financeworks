@@ -1,9 +1,10 @@
 package com.example.financeworks
 
+import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
+import android.os.Handler
 import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
@@ -17,7 +18,7 @@ class SignInActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.signin_main)
+        setContentView(R.layout.activity_signin)
         auth = FirebaseAuth.getInstance()
 
         val signInBtn: Button = findViewById(R.id.signin_btn)
@@ -43,6 +44,12 @@ class SignInActivity : AppCompatActivity() {
                 password1.requestFocus()
                 return@setOnClickListener
             }
+
+            val progressDialog = ProgressDialog(this)
+            progressDialog.setMessage("Signing In...")
+            progressDialog.setCancelable(false)
+            progressDialog.show()
+
             loginUser(email, password)
         }
 
