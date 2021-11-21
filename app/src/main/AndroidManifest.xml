@@ -12,7 +12,6 @@
         android:theme="@style/Theme.Financeworks">
         <activity android:name=".UpdateActivity"/>
         <activity android:name=".DeleteActivity"></activity>
-        <activity android:name=".ProfileActivity" />
         <activity android:name=".CreateActivity" />
         <activity
             android:name=".SplashScreenActivity"
